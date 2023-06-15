@@ -1,11 +1,19 @@
 // Projet_Examen.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
-
 #include <iostream>
+#include "Boxeur.h"
+
+using namespace Boxeurs;
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "---> DEBUT" << endl << endl;
+
+    //  Utilisation statique (ou automatique) d'un objet
+    Boxeur boxeur_1("John", 68.2);
+    cout << "Boxeur: " << boxeur_1.GetNom() << endl;
+    return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
