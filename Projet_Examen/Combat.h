@@ -19,8 +19,11 @@ namespace Combats {
 
 		Combat(); //Constructeur par defaut
 
-
-		Boxeur* SetCoinBleu(Boxeur* nom);
+		//CoinBleu
+		Boxeurs::Boxeur* GetCoinBleu();
+		void SetCoinBleu(Boxeurs::Boxeur* boxeur);
+		
+		//CoinRouge
 		Boxeur* SetCoinRouge(Boxeur* nom);
 
 		string GetNiveau() { return niveau; };

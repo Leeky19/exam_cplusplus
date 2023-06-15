@@ -10,12 +10,17 @@
 Combats::Combat::Combat() : Combat("1/8"){
 }
 
-Boxeur* Combats::Combat::SetCoinBleu(Boxeur* boxeur)
+
+
+Boxeurs::Boxeur* Combats::Combat::GetCoinBleu()
 {
-	this->boxeur = boxeur;
-	return this;
+	return coinBleu;
 }
 
+void Combats::Combat::SetCoinBleu(Boxeurs::Boxeur* boxeur)
+{
+	coinBleu = boxeur;
+}
 
 Combats::Combat::Combat(string niveau) {
 	this->niveau = niveau;
@@ -27,13 +32,7 @@ Combats::Combat::Combat(string niveau) {
 
 
 
-//Boxeurs::Boxeur* Combats::Combat::SetCoinBleu() { return this->boxeur; }
 
-/*Combats::Boxeur* Boxeur::Combat::coinBleu(Boxeurs* nom) {
-	this->nom = nom
-		return this;
-}
-*/
 
 
 Combats::Combat::~Combat() {
