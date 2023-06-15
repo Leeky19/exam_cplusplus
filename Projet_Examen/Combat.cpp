@@ -19,7 +19,10 @@ Boxeurs::Boxeur* Combats::Combat::GetCoinBleu()
 
 void Combats::Combat::SetCoinBleu(Boxeurs::Boxeur* boxeur)
 {
-	coinBleu = boxeur;
+	this->coinBleu = boxeur;
+	#ifdef TRACE
+		std::cout << "Dans le coins bleu à cette adresse, il y a un boxeur "  << this << std::endl;
+	#endif
 }
 
 Combats::Combat::Combat(string niveau) {
