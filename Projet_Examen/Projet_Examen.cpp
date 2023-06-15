@@ -37,7 +37,7 @@ int main()
     cout << "Combat: " << combat_3->GetNiveau() << endl;
     
     delete combat_2;
-    delete combat_3
+    delete combat_3;
     delete boxeur_2;
     return 0;
 

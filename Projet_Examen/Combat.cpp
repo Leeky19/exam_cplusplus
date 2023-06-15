@@ -10,6 +10,13 @@
 Combats::Combat::Combat() : Combat("1/8"){
 }
 
+Boxeur* Combats::Combat::SetCoinBleu(Boxeur* boxeur)
+{
+	this->boxeur = boxeur;
+	return this;
+}
+
+
 Combats::Combat::Combat(string niveau) {
 	this->niveau = niveau;
 	#ifdef TRACE
@@ -18,7 +25,15 @@ Combats::Combat::Combat(string niveau) {
 
 }
 
-Boxeurs::Combats* Boxeur::Combat::
+
+
+//Boxeurs::Boxeur* Combats::Combat::SetCoinBleu() { return this->boxeur; }
+
+/*Combats::Boxeur* Boxeur::Combat::coinBleu(Boxeurs* nom) {
+	this->nom = nom
+		return this;
+}
+*/
 
 
 Combats::Combat::~Combat() {
