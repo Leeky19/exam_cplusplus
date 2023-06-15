@@ -24,7 +24,8 @@ namespace Combats {
 		void SetCoinBleu(Boxeurs::Boxeur* boxeur);
 		
 		//CoinRouge
-		Boxeur* SetCoinRouge(Boxeur* nom);
+		Boxeurs::Boxeur* GetCoinRouge();
+		void SetCoinRouge(Boxeurs::Boxeur* boxeur);
 
 		string GetNiveau() { return niveau; };
 

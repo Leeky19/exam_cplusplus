@@ -28,7 +28,9 @@ int main()
     Combat combat_1("Finale");	// Construction par défaut
     cout << "Combat_1: " << combat_1.GetNiveau() << endl;
     combat_1.SetCoinBleu(&boxeur_1);
-    cout << "\nCombat_1 - Coin Bleu: " << combat_1.GetCoinBleu()->GetNom() << endl << endl;
+    combat_1.SetCoinRouge(boxeur_2);
+    cout << "\nCombat_1 - Coin Bleu: " << combat_1.GetCoinBleu()->GetNom() << endl;
+    cout << "Combat_1 - Coin Rouge: " << combat_1.GetCoinRouge()->GetNom() << endl<< endl ;
 
     Combat* combat_2;	//  Déclaration d'un pointeur
     combat_2 = new Combat("1/8");	// Instanciation

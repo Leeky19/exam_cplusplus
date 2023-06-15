@@ -25,6 +25,29 @@ void Combats::Combat::SetCoinBleu(Boxeurs::Boxeur* boxeur)
 	#endif
 }
 
+
+
+
+
+Boxeurs::Boxeur* Combats::Combat::GetCoinRouge()
+{
+	return coinRouge;
+}
+
+void Combats::Combat::SetCoinRouge(Boxeurs::Boxeur* boxeur)
+{
+	this->coinRouge = boxeur;
+#ifdef TRACE
+	std::cout << "Dans le coins rouge à cette adresse, il y a un boxeur " << this << std::endl;
+#endif
+}
+
+
+
+
+
+
+
 Combats::Combat::Combat(string niveau) {
 	this->niveau = niveau;
 	#ifdef TRACE
