@@ -10,6 +10,8 @@ namespace Combats {
 	{
 	private :
 		string niveau;
+		Boxeur* coinBleu = nullptr; // Matrialiser l'association avec un boxeur
+		Boxeur* coinRouge = nullptr; // Matrialiser l'association avec un boxeur
 
 	public : 
 		Combat(string niv); //Constructeur avec paramettre
@@ -17,7 +19,13 @@ namespace Combats {
 		Combat(); //Constructeur par defaut
 
 
+		Boxeur* SetCoinBleu(Boxeur* boxeur);
+		Boxeur* SetCoinRouge(Boxeur* boxeur);
+
 		string GetNiveau() { return niveau; };
+
+
+		
 
 		~Combat();
 	};

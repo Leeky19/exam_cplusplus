@@ -7,7 +7,7 @@
 #include "Combat.h"
 
 
-Combats::Combat::Combat() : Combat("Comb_1_1/8"){
+Combats::Combat::Combat() : Combat("1/8"){
 }
 
 Combats::Combat::Combat(string niveau) {
@@ -17,6 +17,9 @@ Combats::Combat::Combat(string niveau) {
 	#endif
 
 }
+
+Boxeurs::Combats* Boxeur::Combat::
+
 
 Combats::Combat::~Combat() {
 #ifdef TRACE
