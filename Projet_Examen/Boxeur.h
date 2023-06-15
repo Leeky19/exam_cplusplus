@@ -11,12 +11,16 @@ namespace Boxeurs {
 		double poid;
 
 	public:
+		
+		string GetNom() { return nom; };
+		double GetPoid() { return poid; };
+
+		void SetPoid(double& poid) { this->poid = poid; };
+		
+		
+		
 		Boxeur(string nom, double poid);
 		
-		string GetNom();
-		double GetPoid();
-		void SetPoid(double &poid) { this->poid = poid; };
-
 		~Boxeur();
 	};
 

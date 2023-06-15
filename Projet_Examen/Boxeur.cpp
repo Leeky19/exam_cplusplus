@@ -16,5 +16,12 @@ Boxeurs::Boxeur::Boxeur(string nom, double poid) {
 	#ifdef TRACE
 		cout << "=> Boxeur(" << this->nom << ") de " << this->poid <<"kg est a l'adresse : " << this << endl;
 	#endif
+}
+
+// Destructeur
+Boxeurs::Boxeur::~Boxeur() {
+#ifdef TRACE
+	std::cout << "=> Destruction de " << this->nom << " a " << this << std::endl;
+#endif
 
 }
